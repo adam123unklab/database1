@@ -37,7 +37,7 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
-            this.CBlevel = new System.Windows.Forms.ComboBox();
+            this.CBLevel = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -121,16 +121,16 @@
             this.txtNama.Size = new System.Drawing.Size(140, 26);
             this.txtNama.TabIndex = 8;
             // 
-            // CBlevel
+            // CBLevel
             // 
-            this.CBlevel.FormattingEnabled = true;
-            this.CBlevel.Items.AddRange(new object[] {
+            this.CBLevel.FormattingEnabled = true;
+            this.CBLevel.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.CBlevel.Location = new System.Drawing.Point(259, 241);
-            this.CBlevel.Name = "CBlevel";
-            this.CBlevel.Size = new System.Drawing.Size(139, 28);
-            this.CBlevel.TabIndex = 9;
+            this.CBLevel.Location = new System.Drawing.Point(261, 241);
+            this.CBLevel.Name = "CBLevel";
+            this.CBLevel.Size = new System.Drawing.Size(139, 28);
+            this.CBLevel.TabIndex = 9;
             // 
             // btnSave
             // 
@@ -150,6 +150,7 @@
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnUpdate
             // 
@@ -159,6 +160,7 @@
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -168,6 +170,7 @@
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClear
             // 
@@ -177,6 +180,7 @@
             this.btnClear.TabIndex = 14;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnLogout
             // 
@@ -186,6 +190,7 @@
             this.btnLogout.TabIndex = 15;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // dataGridView1
             // 
@@ -209,7 +214,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.CBlevel);
+            this.Controls.Add(this.CBLevel);
             this.Controls.Add(this.txtNama);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -239,7 +244,7 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtNama;
-        private System.Windows.Forms.ComboBox CBlevel;
+        private System.Windows.Forms.ComboBox CBLevel;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnUpdate;
